@@ -1,13 +1,726 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    margin: 0;
+    font-family: "Nunito", sans-serif;
+    padding-top: 95px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Airtel Black */
+
+.airtel-black-img {
+    width: 118px;
+    height: 48px;
+}
+
+.airtel-black-section {
+    background-color: #000000;
+    padding-top: 60px;
+}
+
+.free-offer {
+    font-size: 35px;
+    color: #ffffff;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+.airtel-black-text {
+    font-size: 18px;
+    color: #f2f4f5;
+    opacity: 0.7;
+    padding-bottom: 50px;
+}
+
+.airtel-black-fam {
+    float: right;
+}
+
+.airtel-black-btn {
+    padding: 15px 40px 15px 40px;
+    border-radius: 50px;
+    background: rgb(74, 6, 6);
+    background: linear-gradient(
+        90deg,
+        rgba(74, 6, 6, 1) 0%,
+        rgba(149, 0, 0, 1) 32%,
+        rgba(149, 0, 0, 1) 72%,
+        rgba(69, 7, 7, 1) 100%
+    );
+    color: #ffffff;
+    font-weight: 600;
+    text-align: center;
+    cursor: pointer;
+}
+
+/* FooterLink */
+
+.copyright {
+    font-size: 12px;
+    margin-bottom: 30px;
+}
+
+.text-reset {
+    text-decoration: none;
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+.text-reset a:link {
+    text-decoration: none;
+    color: grey;
+}
+
+.text-reset a:visited {
+    text-decoration: none;
+    color: grey;
+}
+
+.text-reset a:hover {
+    color: #ff147b !important;
+}
+
+.banking-img {
+    width: 70%;
+    height: auto;
+    margin-left: 20px;
+}
+
+.nav-icons {
+    display: block;
+    width: 100%;
+}
+
+.icon-section {
+    background-color: #fff;
+}
+
+.footer-icon-pack {
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+
+.footer-text-link {
+    display: inline-block;
+}
+
+.social-icon {
+    cursor: pointer;
+    margin-right: 20px;
+    opacity: 0.7;
+}
+
+.facebook:hover {
+    opacity: 1;
+    color: #4267b2;
+}
+
+.linkedin:hover {
+    opacity: 1;
+    color: #0077b5;
+}
+
+.twitter:hover {
+    opacity: 1;
+    color: #1da1f2;
+}
+
+.youtube:hover {
+    opacity: 1;
+    color: #ff0000;
+}
+
+/* MainNavigation */
+
+.logo-img {
+    width: 92px;
+    height: 69px;
+    margin: 0 auto;
+}
+
+.dropdown-head {
+    font-size: 14px;
+    cursor: pointer;
+    letter-spacing: 0.2px;
+    font-weight: 800;
+    white-space: nowrap;
+}
+
+.nav-text {
+    text-align: center;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.center {
+    text-align: center;
+    width: 100%;
+}
+
+.nav-link-sec {
+    text-decoration: none;
+    color: black !important;
+    padding-right: 30px;
+}
+
+/* Postpaid */
+
+.postpaid {
+    font-weight: 600;
+    font-size: 22px;
+}
+
+.grid-icon {
+    margin-bottom: 50px;
+}
+
+.postpaid-section {
+    padding-top: 60px;
+}
+
+.postpaid-head {
+    font-size: 40px;
+    font-weight: 600;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+.postpaid-offers {
+    font-size: 20px;
+    font-weight: 500;
+    padding-bottom: 20px;
+}
+
+.heading {
+    border-bottom: 4px solid #fff;
+    border-radius: 2px;
+}
+
+.choose {
+    font-size: 17px;
+    font-weight: 500;
+    color: grey;
+}
+
+.best-selling {
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.underline-sec {
+    width: 20px;
+    height: 3px;
+    background-color: #e40000;
+}
+
+.postpaid-box {
+    display: flex;
+    flex-direction: row;
+}
+
+.rental {
+    font-size: 12px;
+}
+
+.price {
+    font-size: 35px;
+    font-weight: 500;
+}
+
+.buy-name {
+    font-size: 16px;
+    font-weight: 500;
+    color: red;
+}
+
+.price-box {
+    padding: 12px;
+    text-align: center;
+}
+
+.postpaid-img {
+    float: right;
+}
+
+/* ServiceBox */
+
+.box-img {
+    width: 30px;
+    height: 30px;
+}
+
+.main-box {
+    padding: 18px;
+}
+
+.box-expand {
+    transition: transform 0.1s;
+    cursor: pointer;
+}
+
+.box-expand:hover {
+    transform: scale(1.05);
+}
+
+.service-box-head {
+    font-size: 15px;
+}
+/* Services */
+
+.service-head {
+    font-weight: 600;
+}
+
+.service-section {
+    background-color: #f2f4f5;
+    padding: 60px;
+}
+
+/* UnlimitedPrepaid */
+
+.unli-pre-btn {
+    background-color: #ffffff !important;
+    color: #fd0101 !important;
+}
+
+.unli-pre-btn:hover {
+    background-color: #fd0101 !important;
+    color: #ffffff !important;
+}
+
+.note-text {
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 3.2;
+    letter-spacing: normal;
+    color: #fff;
+}
+
+.unlimit-section {
+    background: rgb(186, 0, 0);
+    background: linear-gradient(
+        90deg,
+        rgba(186, 0, 0, 1) 0%,
+        rgba(143, 0, 0, 1) 100%
+    );
+    padding-top: 50px;
+}
+
+.unlim-prepaid-plan {
+    font-size: 30px;
+    color: #ffffff;
+    font-weight: 500;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+.unlim-head {
+    font-size: 34px;
+    font-weight: 600;
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.unlim-text {
+    font-size: 18px;
+    color: #f2f4f5;
+    font-weight: 600;
+    padding-bottom: 20px;
+}
+
+/* WynkAd */
+
+.wynk-img {
+    height: 200px;
+    width: 409px;
+    float: right;
+}
+
+.wynk-section {
+    background-color: #e9e2d0;
+    padding: 80px;
+}
+
+.wynk-head {
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.free-music {
+    font-size: 35px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-weight: 600;
+}
+
+.listen {
+    font-size: 15px;
+    padding-bottom: 15px;
+}
+
+.wync-btn {
+    background-color: #ffffff !important;
+    color: #fd0101 !important;
+}
+
+.wync-btn:hover {
+    background-color: #fd0101 !important;
+    color: #ffffff !important;
+}
+
+/* PortToAirtel */
+
+.port-section {
+    background: rgb(186, 0, 0);
+    background: linear-gradient(
+        90deg,
+        rgba(186, 0, 0, 1) 0%,
+        rgba(143, 0, 0, 1) 100%
+    );
+    padding-top: 20px;
+}
+
+.port-head {
+    font-size: 22px;
+    color: #ffffff;
+    font-weight: 600;
+    padding-top: 60px;
+    padding-bottom: 20px;
+}
+
+.port-text {
+    font-size: 34px;
+    font-weight: 500;
+    color: white;
+    font-weight: 600;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.port-btn {
+    padding: 14px 24px;
+    background-color: #ffffff !important;
+    color: #fd0101 !important;
+}
+
+.port-btn:hover {
+    background-color: #fd0101 !important;
+    color: #ffffff !important;
+}
+
+.port-img {
+    border: 20px solid #ffffff;
+}
+
+/* AirtelXstream */
+
+.xstream-head {
+    font-size: 34px;
+    text-align: center;
+}
+
+.xstream-logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100px;
+    height: 48px;
+}
+
+.xstream-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 609px;
+    height: 527px;
+}
+
+.xstream-section {
+    padding-top: 30px;
+}
+
+.xstream-product-section {
+    margin-top: -140px;
+    padding-bottom: 30px;
+}
+
+.xstream-shadow {
+    box-shadow: 0 5px 4px 0 rgb(0 0 0 / 8%);
+    font-size: 14px;
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+.xstream-poduct-img {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.xstream-btn {
+    background-color: #fd0101 !important;
+    color: #ffffff !important;
+    width: 100%;
+}
+
+.xstream-btn:hover {
+    background-color: #393939 !important;
+    color: #ffffff !important;
+}
+
+.xstream-paper {
+    padding: 20px;
+    text-align: center;
+}
+
+/* AirtelThanksApp */
+
+.thanksapp-section {
+    background: rgb(186, 0, 0);
+    background: linear-gradient(
+        90deg,
+        rgba(186, 0, 0, 1) 0%,
+        rgba(143, 0, 0, 1) 100%
+    );
+    padding: 40px 0px 40px 0px;
+}
+
+.thanksapp-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 223px;
+    height: 431px;
+}
+
+.experience {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.6;
+    padding-top: 60px;
+    color: white;
+}
+
+.hashtag-img {
+    width: 320px;
+    height: 38px;
+}
+
+.thanksapp-text {
+    font-size: 34px;
+    font-weight: 600;
+    line-height: 1.38;
+    color: #fff;
+    margin-bottom: 40px;
+}
+
+.download-app-text {
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+/* BackTopSection */
+
+.back-to-top {
+    font-size: 20px;
+    letter-spacing: 2.5px;
+    outline: none;
+    color: #e40000;
+    cursor: pointer;
+}
+
+/* RechargeSection */
+
+.recharge-section {
+    background: rgb(186, 0, 0);
+    background: linear-gradient(
+        90deg,
+        rgba(186, 0, 0, 1) 0%,
+        rgba(143, 0, 0, 1) 100%
+    );
+    padding: 40px 0px 40px 0px;
+}
+
+.recharge-head {
+    font-size: 24px;
+    color: #fff;
+    font-weight: 600;
+    line-height: 1.9;
+    letter-spacing: normal;
+    text-align: left;
+}
+
+.recharge-text {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: left;
+    color: #fff;
+}
+
+.prepaid-btn {
+    color: #e40000 !important;
+    background-color: #fff !important;
+    box-shadow: 0 2px 4px -2px rgb(0 0 0 / 35%) !important;
+    cursor: pointer;
+    width: auto !important;
+    height: auto !important;
+    margin-right: 15px !important;
+}
+
+.main-change-btn {
+    color: #fff !important;
+    border: 1px solid #f2f2f2 !important;
+    cursor: pointer;
+    width: auto !important;
+    height: auto !important;
+    margin-right: 15px !important;
+}
+
+.main-change-btn:hover {
+    color: #e40000 !important;
+    background-color: #fff !important;
+    box-shadow: 0 2px 4px -2px rgb(0 0 0 / 35%) !important;
+}
+
+.btn-img-sec {
+    width: 24px;
+    height: 24px;
+}
+
+.btn-text-sec {
+    font-size: 13px;
+    text-transform: capitalize;
+}
+
+/* AmazonFreeTrial */
+
+.trial-head {
+    color: #e60000;
+}
+
+.trial-main-head {
+    padding-top: 100px;
+    font-size: 36px;
+    line-height: 50px;
+}
+
+.amazon-offer-img {
+    float: right;
+}
+
+.amazon-btn {
+    padding: 10px 25px !important;
+    background-color: #fd0101 !important;
+    color: #ffffff !important;
+    margin-top: 50px !important;
+}
+
+.download-sec-head {
+    font-size: 36px;
+    line-height: 40px;
+    letter-spacing: -0.1px;
+    color: #ffffff;
+    padding-bottom: 30px;
+}
+
+.download-app-section {
+    background: linear-gradient(to right, #8d0707 50%, #6b050b 50%);
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.download-sec-text {
+    font-size: 18px;
+    color: #ffffff;
+    padding-bottom: 20px;
+}
+
+.scan-qr {
+    font-size: 36px;
+    line-height: 40px;
+    letter-spacing: -0.1px;
+    color: #ef8d07 !important;
+    padding-bottom: 30px;
+}
+
+.scan-qr-text {
+    font-size: 18px;
+    color: #ffffff;
+    padding-bottom: 20px;
+}
+
+.qr-img {
+    float: right;
+}
+
+/* AirtelThanksApp */
+
+.thanks-offer-section {
+    background-color: #e40000;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.thanks-offer-head {
+    text-align: center;
+    color: #ffffff;
+    font-size: 42px;
+    padding-bottom: 50px;
+}
+
+.img-center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.offer-text {
+    text-align: center;
+    padding-top: 20px;
+    color: white;
+    font-size: 24px;
+}
+
+/* AppFeatures */
+
+.tv-section {
+    background-color: #f6f6f6;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.bank-section {
+    background-color: #f6f6f6;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.home-section {
+    background-color: white;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.feature-head {
+    font-size: 36px !important;
+    line-height: 40px;
+    color: #e40000;
+    padding-top: 150px;
+    padding-bottom: 30px;
+}
+
+.feature-text {
+    font-size: 24px;
+}
+
+.img-right {
+    float: right;
+}
+
+.img-left {
+    float: left;
 }
