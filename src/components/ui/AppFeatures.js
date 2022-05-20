@@ -9,7 +9,8 @@ const AppFeatures = () => {
                     <Row>
                         <Col lg={6} md={12} sm={12} xl={6}>
                             <h4 className="feature-head">Live TV</h4>
-                            <ul>
+                            <div className="main-underline under-color under-length"></div>
+                            <ul className="feature-text-sec">
                                 <li className="feature-text">
                                     Watch trending favourites
                                 </li>
@@ -47,7 +48,8 @@ const AppFeatures = () => {
                         </Col>
                         <Col lg={6} md={12} sm={12} xl={6}>
                             <h4 className="feature-head">Home</h4>
-                            <ul>
+                            <div className="main-underline under-color under-length"></div>
+                            <ul className="feature-text-sec">
                                 <li className="feature-text">
                                     Upfront account info for easy access
                                 </li>
@@ -68,7 +70,8 @@ const AppFeatures = () => {
                     <Row>
                         <Col lg={6} md={12} sm={12} xl={6}>
                             <h4 className="feature-head">Bank</h4>
-                            <ul>
+                            <div className="main-underline under-color under-length"></div>
+                            <ul className="feature-text-sec">
                                 <li className="feature-text">
                                     Enjoy exciting offers on banking with us
                                 </li>

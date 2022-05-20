@@ -1,7 +1,7 @@
 body {
     margin: 0;
     font-family: "Nunito", sans-serif;
-    padding-top: 95px;
+    padding-top: 135px;
 }
 
 /* Airtel Black */
@@ -102,6 +102,26 @@ body {
     display: inline-block;
 }
 
+.footer-bottom-link {
+    display: inline-block;
+    padding-bottom: 0px;
+}
+
+.assurance {
+    width: 85px;
+    height: 31px;
+}
+
+.norton {
+    width: 85px;
+    height: 31px;
+    margin-left: -15px;
+}
+
+.foot-text:hover {
+    color: #ff147b !important;
+}
+
 .social-icon {
     cursor: pointer;
     margin-right: 20px;
@@ -137,11 +157,12 @@ body {
 }
 
 .dropdown-head {
-    font-size: 14px;
+    font-size: 14px !important;
     cursor: pointer;
-    letter-spacing: 0.2px;
-    font-weight: 800;
-    white-space: nowrap;
+    letter-spacing: 0.2px !important;
+    font-weight: 800 !important;
+    white-space: nowrap !important;
+    color: #000000 !important;
 }
 
 .nav-text {
@@ -187,11 +208,6 @@ body {
     font-size: 20px;
     font-weight: 500;
     padding-bottom: 20px;
-}
-
-.heading {
-    border-bottom: 4px solid #fff;
-    border-radius: 2px;
 }
 
 .choose {
@@ -309,7 +325,7 @@ body {
     color: #ffffff;
     font-weight: 500;
     padding-top: 50px;
-    padding-bottom: 20px;
+    padding-bottom: 50px;
 }
 
 .unlim-head {
@@ -317,7 +333,7 @@ body {
     font-weight: 600;
     color: white;
     padding-top: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
 }
 
 .unlim-text {
@@ -353,7 +369,7 @@ body {
 }
 
 .listen {
-    font-size: 15px;
+    font-size: 18px;
     padding-bottom: 15px;
 }
 
@@ -379,12 +395,28 @@ body {
     padding-top: 20px;
 }
 
+.main-underline {
+    width: 40px !important;
+    height: 5px !important;
+    background-color: white !important;
+    border-radius: 50px;
+}
+
+.under-color {
+    background-color: #e60000 !important;
+    margin-top: 0px !important;
+}
+
+.under-length {
+    width: 55px !important;
+}
+
 .port-head {
     font-size: 22px;
     color: #ffffff;
     font-weight: 600;
     padding-top: 60px;
-    padding-bottom: 20px;
+    padding-bottom: 5px;
 }
 
 .port-text {
@@ -561,6 +593,22 @@ body {
     color: #fff;
 }
 
+.search-section {
+    margin-top: 30px;
+}
+
+.search-input {
+    width: 75%;
+    float: left;
+    margin-right: 15px;
+}
+
+.btn-recharge {
+    background-color: #fd0101 !important;
+    color: #ffffff !important;
+    float: left;
+}
+
 .prepaid-btn {
     color: #e40000 !important;
     background-color: #fff !important;
@@ -617,6 +665,10 @@ body {
     background-color: #fd0101 !important;
     color: #ffffff !important;
     margin-top: 50px !important;
+}
+
+.amazon-btn:hover {
+    background-color: #c9020c !important;
 }
 
 .download-sec-head {
@@ -710,11 +762,14 @@ body {
     line-height: 40px;
     color: #e40000;
     padding-top: 150px;
-    padding-bottom: 30px;
 }
 
 .feature-text {
     font-size: 24px;
+}
+
+.feature-text-sec {
+    padding-top: 30px;
 }
 
 .img-right {
@@ -723,4 +778,46 @@ body {
 
 .img-left {
     float: left;
+}
+
+/* LinkNav */
+
+.link-section {
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.main-link-section {
+    background-color: #f5f5f5;
+    height: auto;
+}
+
+.head-link {
+    font-size: 10px;
+    color: #393939;
+    margin-left: 16px;
+    text-decoration: none;
+}
+
+.head-link:hover {
+    color: black;
+    font-weight: 600;
+    font-size: 11px;
+}
+
+.personal {
+    font-weight: 600;
+    font-size: 11px;
+}
+
+@media screen and (max-width: 768px) {
+    .main-link-section {
+        display: none;
+    }
+    body {
+        padding-top: 95px;
+    }
+    .price {
+        font-size: 18px;
+    }
 }

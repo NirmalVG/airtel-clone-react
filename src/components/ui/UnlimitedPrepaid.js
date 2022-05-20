@@ -12,6 +12,7 @@ const UnlimitedPrepaid = () => {
                 <Row>
                     <Col lg={6} md={12} sm={12} xl={6}>
                         <span className="unlim-prepaid-plan">AIRTEL UNLIMITED PREPAID</span>
+                        <div className="main-underline"></div>
                         <h4 className="unlim-head">TALK UNLIMITED</h4>
                         <p className="unlim-text">
                             Our best plans, our best prices, on the

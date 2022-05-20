@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { Button } from "@mui/material";
-import { Image } from "react-bootstrap";
+import { Image, Form } from "react-bootstrap";
 
 const RechargeSection = () => {
     return (
@@ -15,68 +15,96 @@ const RechargeSection = () => {
                         </p>
                     </Col>
                     <Col lg={6} md={12} sm={12} xl={6}>
-                        <div className="recharge-btn-list">
-                            <Button variant="contained" className="prepaid-btn">
-                                <Image
-                                    src="images/services-sim.svg"
-                                    className="btn-img-sec"
-                                    fluid
-                                ></Image>{" "}
-                                <span className="btn-text-sec">
-                                    Prepaid
-                                </span>
-                            </Button>
-                            <Button
-                                variant="outlined"
-                                className="main-change-btn"
-                            >
-                                <Image
-                                    src="images/services-sim.svg"
-                                    className="btn-img-sec"
-                                    fluid
-                                ></Image>
-                                <span className="btn-text-sec">
-                                    {" "}Postpaid
-                                </span>
-                            </Button>
-                            <Button
-                                variant="outlined"
-                                className="main-change-btn"
-                            >
-                                <Image
-                                    src="images/services-broadband.svg"
-                                    className="btn-img-sec"
-                                    fluid
-                                ></Image>
-                                <span className="btn-text-sec">{" "}DTH</span>
-                            </Button>
-                            <Button
-                                variant="outlined"
-                                className="main-change-btn"
-                            >
-                                <Image
-                                    src="images/services-dth.svg"
-                                    className="btn-img-sec"
-                                    fluid
-                                ></Image>
-                                <span className="btn-text-sec">
-                                    {" "}Broadband
-                                </span>
-                            </Button>
-                            <Button
-                                variant="outlined"
-                                className="main-change-btn"
-                            >
-                                <Image
-                                    src="images/airtel-black.svg"
-                                    className="btn-img-sec"
-                                    fluid
-                                ></Image>
-                                <span className="btn-text-sec">
-                                    {" "}Airtel Black
-                                </span>
-                            </Button>
-                        </div>                       
+                        <Row>
+                            <Col>
+                                <div className="recharge-btn-list">
+                                    <Button
+                                        variant="contained"
+                                        className="prepaid-btn"
+                                    >
+                                        <Image
+                                            src="images/services-sim.svg"
+                                            className="btn-img-sec"
+                                            fluid
+                                        ></Image>{" "}
+                                        <span className="btn-text-sec">
+                                            Prepaid
+                                        </span>
+                                    </Button>
+                                    <Button
+                                        variant="outlined"
+                                        className="main-change-btn"
+                                    >
+                                        <Image
+                                            src="images/services-sim.svg"
+                                            className="btn-img-sec"
+                                            fluid
+                                        ></Image>
+                                        <span className="btn-text-sec">
+                                            {" "}
+                                            Postpaid
+                                        </span>
+                                    </Button>
+                                    <Button
+                                        variant="outlined"
+                                        className="main-change-btn"
+                                    >
+                                        <Image
+                                            src="images/services-broadband.svg"
+                                            className="btn-img-sec"
+                                            fluid
+                                        ></Image>
+                                        <span className="btn-text-sec">
+                                            {" "}
+                                            DTH
+                                        </span>
+                                    </Button>
+                                    <Button
+                                        variant="outlined"
+                                        className="main-change-btn"
+                                    >
+                                        <Image
+                                            src="images/services-dth.svg"
+                                            className="btn-img-sec"
+                                            fluid
+                                        ></Image>
+                                        <span className="btn-text-sec">
+                                            {" "}
+                                            Broadband
+                                        </span>
+                                    </Button>
+                                    <Button
+                                        variant="outlined"
+                                        className="main-change-btn"
+                                    >
+                                        <Image
+                                            src="images/airtel-black.svg"
+                                            className="btn-img-sec"
+                                            fluid
+                                        ></Image>
+                                        <span className="btn-text-sec">
+                                            {" "}
+                                            Airtel Black
+                                        </span>
+                                    </Button>
+                                </div>
+                            </Col>
+                        </Row>
+                        <Row className="search-section">
+                            <Col>
+                                <Form.Control
+                                    type="text"
+                                    placeholder="Enter Mobile Number"
+                                    className="search-input"
+                                />
+                                <Button
+                                    variant="contained"
+                                    className="btn-recharge"
+                                >
+                                    Recharge
+                                </Button>
+                            </Col>
+                        </Row>
                     </Col>
                 </Row>
             </Container>

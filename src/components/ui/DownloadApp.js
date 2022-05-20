@@ -16,11 +16,13 @@ const DownloadApp = () => {
                             <Image
                                 src="images/download_app.png"
                                 alt="Download App"
+                                style={{cursor: "pointer"}}
                                 fluid
                             />
                             <Image
                                 src="images/download_googleplay.png"
                                 alt="Download Google Play"
+                                style={{cursor: "pointer"}}
                                 fluid
                             />
                         </div>

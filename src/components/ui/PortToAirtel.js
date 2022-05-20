@@ -18,6 +18,7 @@ const PortToAirtel = () => {
                     </Col>
                     <Col xl={6} lg={6} md={12} sm={12} className="mt-5 mb-5">
                         <div className="port-head">PORT TO AIRTEL</div>
+                        <div className="main-underline"></div>
                         <h4 className="port-text">
                             SWITCH TO AIRTEL WITHOUT
                             <br /> CHANGING YOUR MOBILE

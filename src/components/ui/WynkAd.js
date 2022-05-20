@@ -24,6 +24,7 @@ const WynkAd = () => {
                         className="wynk-text mt-5 mb-5"
                     >
                         <div className="wynk-head">WYNK MUSIC</div>
+                        <div className="main-underline under-color"></div>
                         <div className="free-music">GET FREE MUSIC</div>
                         <div className="listen">
                             Listen to your favourites on Wynk Music

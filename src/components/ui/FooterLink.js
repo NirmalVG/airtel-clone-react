@@ -1,4 +1,5 @@
 import React from "react";
+import {Image} from "react-bootstrap";
 import BackTopSection from "./BackTopSection";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
@@ -182,6 +183,28 @@ const FooterLink = () => {
                         </div>
                     </div>
                     <hr />
+                    <div className="footer-bottom-link container row">
+                        <a href="#!" className="foot-text text-reset">
+                            IMPORTANT ALERTS
+                        </a>
+                        <a href="#!" className="foot-text text-reset">
+                            PRIVACY POLICY
+                        </a>
+                        <a href="#!" className="foot-text text-reset">
+                            COOKIE NOTICE
+                        </a>
+                        <a href="#!" className="foot-text text-reset">
+                            DLT REGISTRATION FOR COMMERCIAL COMMUNICATION
+                        </a>
+                        <a href="#!" className="foot-text text-reset">
+                            DO NOT DISTURB LIST
+                        </a>
+                        <a href="#!" className="foot-text text-reset">
+                            CONTACT US
+                        </a>
+                        <Image src="images/bsi-assurance-iso.webp" alt="BSI" className="assurance" />
+                        <Image src="images/norton-certificate.webp" alt="Norton" className="norton" />
+                    </div>
                     <div className="container row mt-3 copyright">
                         Copyright © 2020 Purplle. All rights reserved.
                     </div>

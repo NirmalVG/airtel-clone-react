@@ -20,7 +20,7 @@ const AmazonFreeTrial = () => {
                         </span>
                     </h1>
                     <Button variant="contained" className="amazon-btn">
-                        CLAIM NOW <ArrowRightAltIcon />
+                        CLAIM NOW <ArrowRightAltIcon className="arrow-icon" />
                     </Button>
                 </Col>
                 <Col lg={6} md={12} sm={12} xl={6}>
