@@ -14,7 +14,7 @@ const AirtelBlack = () => {
                             fluid
                         />
                         <p className="free-offer">
-                            Enjoy first <b>30 Days free</b> of a<br /> new
+                            Enjoy first <b>30 days free</b> of a<br /> new
                             service with Airtel Black
                         </p>
                         <p className="airtel-black-text">

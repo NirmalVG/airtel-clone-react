@@ -12,17 +12,17 @@ const DownloadApp = () => {
                             The application is available for the iOS &<br />
                             Android smartphones
                         </p>
-                        <div>
+                        <div className="download-play-app">
                             <Image
                                 src="images/download_app.png"
                                 alt="Download App"
-                                style={{cursor: "pointer"}}
+                                style={{ cursor: "pointer" }}
                                 fluid
                             />
                             <Image
                                 src="images/download_googleplay.png"
                                 alt="Download Google Play"
-                                style={{cursor: "pointer"}}
+                                style={{ cursor: "pointer" }}
                                 fluid
                             />
                         </div>
@@ -36,12 +36,14 @@ const DownloadApp = () => {
                                 Thanks App
                             </p>
                         </div>
-                        <Image
-                            src="images/app_qr_code.png"
-                            alt="App QR Code"
-                            className="qr-img"
-                            fluid
-                        />
+                        <div className="qr-img-sec">
+                            <Image
+                                src="images/app_qr_code.png"
+                                alt="App QR Code"
+                                className="qr-img"
+                                fluid
+                            />
+                        </div>
                     </Col>
                 </Row>
             </Container>

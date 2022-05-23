@@ -27,7 +27,7 @@ const Postpaid = () => {
                             Best selling Postpaid plans
                         </span>
                         <div className="postpaid-box">
-                            <div className="col-4">
+                            <div className="postpaid-box-sec">
                                 <Box
                                     sx={{
                                         display: "flex",
@@ -55,7 +55,7 @@ const Postpaid = () => {
                                     </Paper>
                                 </Box>
                             </div>
-                            <div className="col-4">
+                            <div className="postpaid-box-sec">
                             <Box
                                 sx={{
                                     display: "flex",
@@ -81,7 +81,7 @@ const Postpaid = () => {
                                 </Paper>
                             </Box>
                             </div>
-                            <div className="col-4">
+                            <div className="postpaid-box-sec">
                             <Box
                                 sx={{
                                     display: "flex",

@@ -16,7 +16,7 @@ const AmazonFreeTrial = () => {
                         </span>
                         <span>
                             Mobile Edition
-                            <br /> with your Airtel Recharge
+                            <br /> with your Airtel recharge
                         </span>
                     </h1>
                     <Button variant="contained" className="amazon-btn">

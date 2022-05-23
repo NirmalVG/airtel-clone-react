@@ -42,7 +42,7 @@ const AirtelXstream = () => {
             <Container className="xstream-product-section">
                 <Row>
                     {xstream.map((xstream) => (
-                        <Col lg={4} md={12} sm={12} xl={4}>
+                        <Col className="xstream-product-box" lg={4} md={12} sm={12} xl={4}>
                             <Box
                                 sx={{
                                     display: "flex",

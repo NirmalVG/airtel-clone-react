@@ -8,7 +8,7 @@ const WynkAd = () => {
         <div className="wynk-section">
             <Container>
                 <Row>
-                    <Col xl={6} lg={6} md={12} sm={12} className=" mt-5 mb-5">
+                    <Col xl={6} lg={6} md={12} sm={12} className="mt-5 mb-5">
                         <Image
                             className="wynk-img"
                             src="images/wynk-music.webp"
@@ -21,7 +21,7 @@ const WynkAd = () => {
                         lg={6}
                         md={12}
                         sm={12}
-                        className="wynk-text mt-5 mb-5"
+                        className="mt-5 mb-5"
                     >
                         <div className="wynk-head">WYNK MUSIC</div>
                         <div className="main-underline under-color"></div>

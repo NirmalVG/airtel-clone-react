@@ -1,10 +1,17 @@
-import React from "react";
-import { Navbar, Nav, NavDropdown, Container, Image } from "react-bootstrap";
+import React, { useState } from "react";
+import { Navbar, Nav, Container, Image, NavDropdown } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { Divider } from "@mui/material";
 import LinkNav from "./LinkNav";
 
 const MainNavigation = () => {
+    const [prepaid, setPrepaid] = useState(false);
+    const [postpaid, setPostpaid] = useState(false);
+    const [broadband, setBroadband] = useState(false);
+    const [dth, setDth] = useState(false);
+    const [bank, setBank] = useState(false);
+    const [airtelBlack, setAirtelBlack] = useState(false);
+    const [help, setHelp] = useState(false);
     return (
         <>
             <div className="fixed-top">
@@ -28,132 +35,261 @@ const MainNavigation = () => {
                             </Link>
                         </Navbar.Brand>
                         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-                        <Navbar.Collapse id="responsive-navbar-nav" >
+                        <Navbar.Collapse id="responsive-navbar-nav">
                             <Nav className="me-auto">
                                 <NavDropdown
-                                    title="PREPAID"
+                                    title={
+                                        <span className="hover-underline-animation nav-head my-auto text-uppercase text-danger">
+                                            Prepaid{" "}
+                                            {prepaid ? (
+                                                <i class="fa-solid fa-angle-up"></i>
+                                            ) : (
+                                                <i class="fa-solid fa-angle-down"></i>
+                                            )}
+                                        </span>
+                                    }
                                     id="collasible-nav-dropdown"
-                                    className="dropdown-head"
+                                    show={prepaid}
+                                    onMouseEnter={() => setPrepaid(true)}
+                                    onMouseLeave={() => setPrepaid(false)}
                                 >
                                     <NavDropdown.Item href="#action/3.1">
-                                        Recharge
+                                        <span className="dropdown-text">
+                                            Recharge
+                                        </span>
                                     </NavDropdown.Item>
                                     <NavDropdown.Item href="#action/3.2">
-                                        New Prepaid Sim
+                                        <span className="dropdown-text">
+                                            New Prepaid Sim
+                                        </span>
                                     </NavDropdown.Item>
                                     <NavDropdown.Item href="#action/3.3">
-                                        View Plans
+                                        <span className="dropdown-text">
+                                            View Plans
+                                        </span>
                                     </NavDropdown.Item>
                                     <NavDropdown.Item href="#action/3.4">
-                                        International Roaming
+                                        <span className="dropdown-text">
+                                            International Roaming
+                                        </span>
                                     </NavDropdown.Item>
                                     <NavDropdown.Item href="#action/3.5">
-                                        Switch Prepaid to Postpaid
+                                        <span className="dropdown-text">
+                                            Switch Prepaid to Postpaid
+                                        </span>
                                     </NavDropdown.Item>
                                     <NavDropdown.Item href="#action/3.6">
-                                        Post to Airtel Prepaid
+                                        <span className="dropdown-text">
+                                            Post to Airtel Prepaid
+                                        </span>
                                     </NavDropdown.Item>
                                 </NavDropdown>
                                 <NavDropdown
-                                    title="POSTPAID"
+                                    title={
+                                        <span className="hover-underline-animation nav-head my-auto text-uppercase text-danger">
+                                            Postpaid{" "}
+                                            {postpaid ? (
+                                                <i class="fa-solid fa-angle-up"></i>
+                                            ) : (
+                                                <i class="fa-solid fa-angle-down"></i>
+                                            )}
+                                        </span>
+                                    }
                                     id="collasible-nav-dropdown"
-                                    className="dropdown-head"
+                                    show={postpaid}
+                                    onMouseEnter={() => setPostpaid(true)}
+                                    onMouseLeave={() => setPostpaid(false)}
                                 >
                                     <NavDropdown.Item href="#action/3.1">
-                                        Pay Bill
+                                        <span className="dropdown-text">
+                                            Pay Bill
+                                        </span>
                                     </NavDropdown.Item>
                                     <NavDropdown.Item href="#action/3.2">
-                                        Buy New Connection
+                                        <span className="dropdown-text">
+                                            Buy New Connection
+                                        </span>
                                     </NavDropdown.Item>
                                     <NavDropdown.Item href="#action/3.3">
-                                        View Plans
+                                        <span className="dropdown-text">
+                                            View Plans
+                                        </span>
                                     </NavDropdown.Item>
                                     <NavDropdown.Item href="#action/3.4">
-                                        Switch Prepaid to Postpaid
+                                        <span className="dropdown-text">
+                                            Switch Prepaid to Postpaid
+                                        </span>
                                     </NavDropdown.Item>
                                     <NavDropdown.Item href="#action/3.5">
-                                        Port to Airtel
+                                        <span className="dropdown-text">
+                                            Port to Airtel
+                                        </span>
                                     </NavDropdown.Item>
                                     <NavDropdown.Item href="#action/3.6">
-                                        Free Sim Delivery
+                                        <span className="dropdown-text">
+                                            Free Sim Delivery
+                                        </span>
                                     </NavDropdown.Item>
                                 </NavDropdown>
                                 <NavDropdown
-                                    title="BROADBAND"
+                                    title={
+                                        <span className="hover-underline-animation nav-head my-auto text-uppercase text-danger">
+                                            Broadband{" "}
+                                            {broadband ? (
+                                                <i class="fa-solid fa-angle-up"></i>
+                                            ) : (
+                                                <i class="fa-solid fa-angle-down"></i>
+                                            )}
+                                        </span>
+                                    }
                                     id="collasible-nav-dropdown"
-                                    className="dropdown-head"
+                                    show={broadband}
+                                    onMouseEnter={() => setBroadband(true)}
+                                    onMouseLeave={() => setBroadband(false)}
                                 >
                                     <NavDropdown.Item href="#action/3.1">
-                                        Pay Bill / Recharge
+                                        <span className="dropdown-text">
+                                            Pay Bill / Recharge
+                                        </span>
                                     </NavDropdown.Item>
                                     <NavDropdown.Item href="#action/3.2">
-                                        Buy New Connection
+                                        <span className="dropdown-text">
+                                            Buy New Connection
+                                        </span>
                                     </NavDropdown.Item>
                                     <NavDropdown.Item href="#action/3.3">
-                                        View Plans
+                                        <span className="dropdown-text">
+                                            View Plans
+                                        </span>
                                     </NavDropdown.Item>
                                 </NavDropdown>
                                 <NavDropdown
-                                    title="DTH"
+                                    title={
+                                        <span className="hover-underline-animation nav-head my-auto text-uppercase text-danger">
+                                            DTH{" "}
+                                            {dth ? (
+                                                <i class="fa-solid fa-angle-up"></i>
+                                            ) : (
+                                                <i class="fa-solid fa-angle-down"></i>
+                                            )}
+                                        </span>
+                                    }
                                     id="collasible-nav-dropdown"
-                                    className="dropdown-head"
+                                    show={dth}
+                                    onMouseEnter={() => setDth(true)}
+                                    onMouseLeave={() => setDth(false)}
                                 >
                                     <NavDropdown.Item href="#action/3.1">
-                                        Recharge
+                                        <span className="dropdown-text">
+                                            Recharge
+                                        </span>
                                     </NavDropdown.Item>
                                     <NavDropdown.Item href="#action/3.2">
-                                        Buy New DTH Connection
+                                        <span className="dropdown-text">
+                                            Buy New DTH Connection
+                                        </span>
                                     </NavDropdown.Item>
                                     <NavDropdown.Item href="#action/3.3">
-                                        View Plans
+                                        <span className="dropdown-text">
+                                            View Plans
+                                        </span>
                                     </NavDropdown.Item>
                                     <NavDropdown.Item href="#action/3.4">
-                                        Upgrade Box
+                                        <span className="dropdown-text">
+                                            Upgrade Box
+                                        </span>
                                     </NavDropdown.Item>
                                     <NavDropdown.Item href="#action/3.5">
-                                        Xstream
+                                        <span className="dropdown-text">
+                                            Xstream
+                                        </span>
                                     </NavDropdown.Item>
                                     <NavDropdown.Item href="#action/3.6">
-                                        Buy Second DTH Connection
+                                        <span className="dropdown-text">
+                                            Buy Second DTH Connection
+                                        </span>
                                     </NavDropdown.Item>
                                 </NavDropdown>
                                 <NavDropdown
-                                    title="BANK"
+                                    title={
+                                        <span className="hover-underline-animation nav-head my-auto text-uppercase text-danger">
+                                            Bank{" "}
+                                            {bank ? (
+                                                <i class="fa-solid fa-angle-up"></i>
+                                            ) : (
+                                                <i class="fa-solid fa-angle-down"></i>
+                                            )}
+                                        </span>
+                                    }
                                     id="collasible-nav-dropdown"
-                                    className="dropdown-head"
+                                    show={bank}
+                                    onMouseEnter={() => setBank(true)}
+                                    onMouseLeave={() => setBank(false)}
                                 >
                                     <NavDropdown.Item href="#action/3.1">
-                                        View Account
+                                        <span className="dropdown-text">
+                                            View Account
+                                        </span>
                                     </NavDropdown.Item>
                                     <NavDropdown.Item href="#action/3.2">
-                                        Get New Account
+                                        <span className="dropdown-text">
+                                            Get New Account
+                                        </span>
                                     </NavDropdown.Item>
                                     <NavDropdown.Item href="#action/3.3">
-                                        Add Money
+                                        <span className="dropdown-text">
+                                            Add Money
+                                        </span>
                                     </NavDropdown.Item>
                                     <NavDropdown.Item href="#action/3.4">
-                                        Know More
+                                        <span className="dropdown-text">
+                                            Know More
+                                        </span>
                                     </NavDropdown.Item>
                                 </NavDropdown>
                                 <NavDropdown
-                                    title="AIRTEL BLACK"
+                                    title={
+                                        <span className="hover-underline-animation nav-head my-auto text-uppercase text-danger">
+                                            Airtel Black{" "}
+                                            {airtelBlack ? (
+                                                <i class="fa-solid fa-angle-up"></i>
+                                            ) : (
+                                                <i class="fa-solid fa-angle-down"></i>
+                                            )}
+                                        </span>
+                                    }
                                     id="collasible-nav-dropdown"
-                                    className="dropdown-head"
+                                    show={airtelBlack}
+                                    onMouseEnter={() => setAirtelBlack(true)}
+                                    onMouseLeave={() => setAirtelBlack(false)}
                                 >
                                     <NavDropdown.Item href="#action/3.1">
-                                        Pay Bill
+                                        <span className="dropdown-text">
+                                            Pay Bill
+                                        </span>
                                     </NavDropdown.Item>
                                     <NavDropdown.Item href="#action/3.2">
-                                        View Plans
+                                        <span className="dropdown-text">
+                                            View Plans
+                                        </span>
                                     </NavDropdown.Item>
                                 </NavDropdown>
                                 <NavDropdown
-                                    title="HELP"
+                                    title={
+                                        <span className="hover-underline-animation nav-head my-auto text-uppercase">
+                                            Help{" "}
+                                            {help ? <i class="fa-solid fa-angle-up"></i> : <i class="fa-solid fa-angle-down"></i>}
+                                        </span>
+                                    }
                                     id="collasible-nav-dropdown"
-                                    className="dropdown-head"
+                                    show={help}
+                                    onMouseEnter={() => setHelp(true)}
+                                    onMouseLeave={() => setHelp(false)}
                                 >
                                     <NavDropdown.Item href="#action/3.1">
-                                        Contact Us
+                                        <span className="dropdown-text">
+                                            Contact Us
+                                        </span>
                                     </NavDropdown.Item>
                                 </NavDropdown>
                             </Nav>
