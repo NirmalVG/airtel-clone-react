@@ -3,7 +3,7 @@ import { Carousel, Container, Row, Col, Image } from "react-bootstrap";
 
 const WhatsNew = () => {
     return (
-        <Carousel variant="dark" controls={false}>
+        <Carousel variant="dark" controls={false} className="slider-banner">
             <Carousel.Item>
                 <Container>
                     <Row>

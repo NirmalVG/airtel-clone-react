@@ -12,7 +12,7 @@ body {
 }
 
 .airtel-black-section {
-    background-color: #000000;
+    background-color: #101010;
     padding-top: 60px;
 }
 
@@ -164,7 +164,7 @@ body {
     cursor: pointer !important;
     letter-spacing: 0.2px !important;
     font-weight: 800 !important;
-    padding-bottom: 12px;
+    padding-bottom: 10px;
 }
 
 .nav-head:hover {
@@ -635,6 +635,10 @@ body {
     text-align: left;
 }
 
+.input-with-button {
+    border: 6px solid #fff;
+}
+
 .recharge-text {
     margin: 0;
     font-size: 18px;
@@ -654,9 +658,8 @@ body {
 }
 
 .search-input {
-    width: 75%;
+    width: 77%;
     float: left;
-    margin-right: 15px;
 }
 
 .btn-recharge {
@@ -693,6 +696,19 @@ body {
 .btn-img-sec {
     width: 24px;
     height: 24px;
+}
+
+.small-btn-recharge {
+    width: 24px;
+    height: 24px;
+}
+
+.main-change-btn:hover {
+    filter: brightness(1);
+}
+
+.main-change-btn {
+    filter: brightness(5.5);
 }
 
 .btn-text-sec {
@@ -912,8 +928,24 @@ body {
     width: 120px !important;
 }
 
-.carousel-indicators button {
+.banner .carousel-indicators button {
     background-color: red !important;
+    width: 80px !important;
+    margin-right: 10px !important;
+}
+
+.slider-banner .carousel-indicators button {
+    background-color: red !important;
+    border-radius: 50% !important;
+    display: inline-block !important;
+    height: 10px !important;
+    width: 10px !important;
+}
+
+.carousel-control-next,
+.carousel-control-prev /*, .carousel-indicators */ {
+    filter: brightness(0) saturate(100%) invert(11%) sepia(67%) saturate(6914%)
+        hue-rotate(358deg) brightness(106%) contrast(114%) !important;
 }
 
 @media screen and (max-width: 768px) {
@@ -945,6 +977,7 @@ body {
     }
     .main-change-btn {
         margin-bottom: 15px !important;
+        filter: brightness(5.5) !important;
     }
     .download-app-section {
         background: linear-gradient(to bottom, #8d0707 50%, #6b050b 50%);
@@ -1038,5 +1071,8 @@ body {
         flex-direction: column;
         align-items: center;
         justify-content: center;
+    }
+    .carousel-indicators button {
+        display: none;
     }
 }

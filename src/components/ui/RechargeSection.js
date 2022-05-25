@@ -24,7 +24,7 @@ const RechargeSection = () => {
                                     >
                                         <Image
                                             src="images/services-sim.svg"
-                                            className="btn-img-sec"
+                                            className="small-btn-recharge"
                                             fluid
                                         ></Image>{" "}
                                         <span className="btn-text-sec">

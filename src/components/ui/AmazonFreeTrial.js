@@ -4,6 +4,7 @@ import { Button } from "@mui/material";
 import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
 
 const AmazonFreeTrial = () => {
+    
     return (
         <Container>
             <Row>
@@ -19,8 +20,11 @@ const AmazonFreeTrial = () => {
                             <br /> with your Airtel recharge
                         </span>
                     </h1>
-                    <Button variant="contained" className="amazon-btn">
-                        CLAIM NOW <ArrowRightAltIcon className="arrow-icon" />
+                    <Button
+                        variant="contained"
+                        className="amazon-btn"
+                    >
+                        <span className="claim-btn"><span className="claim-text">CLAIM NOW </span><ArrowRightAltIcon className="arrow-icon" /></span>
                     </Button>
                 </Col>
                 <Col lg={6} md={12} sm={12} xl={6}>
